@@ -1,0 +1,51 @@
+// Footer Stylesheet
+
+@mixin footer-content() {
+  .social-links {
+    width: 33%;
+    padding: 2% 0;
+    display: inline-block;
+  }
+}
+
+.footer {
+  width: $outerContainer;
+  padding: $innerContainerPadding;
+
+  // Social Links - Facebook, Twitter, LinkedIN
+  .social-links {
+    color: #fff;
+    padding: 4% 0;
+    @extend .text-left;
+
+    a {
+      span {
+        padding: 2%;
+        margin: 3%;
+        background-color: $secondaryColor;
+        color: $whiteColor;
+        border-radius: 50%;
+      }
+
+      &:hover {
+        span {
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  @include bp(m) {
+    @include footer-content();
+  };
+
+  @include bp(l) {
+    @include footer-content();
+  }
+
+  @include bp(xl) {
+    @include footer-content();
+    width: $innerContainer;
+  };
+
+}

@@ -1,0 +1,78 @@
+/**
+ * Default Styles used for template
+ * @author - Amruthaluri Kiran Kumar
+ */
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Headings
+h1,h2,h3,h4,h5,h6 {
+  font-family: $primaryFont;
+}
+
+// Link Style - anchor
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+// Heading Extra large
+h1.extra-large {
+  font-size: 70px;
+  margin: 0;
+  padding-top: 0;
+  color: $primaryColor
+}
+
+// Sub - heading - 3
+h3 {
+  // sub-selection
+  span {
+    background: $secondaryColor;
+  }
+}
+
+// Sub-Heading - 4
+h4 {
+  margin: 0;
+}
+
+h6 {
+  text-transform: capitalize;
+  font-family: $secondaryFont;
+  margin: 10px 0;
+}
+
+// Helper Classes
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+// Font Family for the document
+body {
+  font-family: $secondaryFont;
+}
+
+// Outer Container
+.outer-wrapper {
+  width : $outerContainer;
+  background-color: $backgroundColor;
+}
+
+// Inner Container
+.inner-wrapper {
+  width: $innerContainer;
+  margin: 0 auto;
+}

@@ -1,0 +1,92 @@
+// Main Content Stylesheet
+
+@mixin main-content() {
+  .two-column {
+    width: $outerContainer;
+    background-color: $secondaryColor;
+    .one-column {
+      float: left;
+      display: inline-block;
+    }
+    &.personnel-experience-row {
+      .one-column.personnel-statement {
+        width: 60%;
+        height: $outerContainer;
+      }
+      .one-column.education-work{
+        width: 40%;
+        height: $outerContainer;
+      }
+    }
+  }
+}
+
+.container {
+
+  width: $outerContainer;
+
+  .personnel-experience-row {
+    background-color: $secondaryColor;
+  }
+
+  // Personnel Statement Style
+  .personnel-statement {
+    background-color: $primaryColor;
+    padding: $innerContainerPadding;
+    color: $blackColor;
+  }
+
+  // Education & Work Experience Style
+  .education-work {
+    background-color: $secondaryColor;
+    padding: $innerContainerPadding;
+    padding-left: 20px;
+    color: $whiteColor;
+  }
+
+  // Skill Set Experience Style
+  .skill-set {
+    background-color: $secondaryColor;
+    padding: $innerContainerPadding;
+    color: $whiteColor;
+
+    .skill {
+      margin-bottom: 20px;
+    }
+  }
+
+  // blockquote tag adjusting indenting with left margin
+  blockquote.work-summary {
+    margin: 0;
+    margin-left: 20px;
+    .period, .location, .company{
+      margin: 12.75px 0;
+    }
+  }
+
+  .pr_progress {
+    height: 20px;
+    width: 100%;
+    padding: 0;
+    background: $skillMeterColor;
+    span.ctrl-value {
+      display: block;
+      height: 100%;
+      background-color: $primaryColor;
+    }
+  }
+
+  @include bp(m) {
+    @include main-content();
+  }
+
+  @include bp(l) {
+    @include main-content();
+  }
+
+  @include bp(xl) {
+    @include main-content();
+    width: $innerContainer;
+  }
+
+}

@@ -1,0 +1,26 @@
+// Breakpoints - different media
+$bp-xxs-min: 359;
+$bp-xs-min: 480;
+$bp-s-min: 640;
+$bp-m-min: 768; // iPad portrait
+$bp-l-min: 1024; // iPad landscape
+$bp-xl-min: 1244; // 1280px screen resolution minus scrollbars
+$bp-xxl-min: 1410; // 1440px screen resolution minus scrollbars
+
+// Container Widths
+$outerContainer: 100%;
+$innerContainer: 1200px;
+$innerContainerPadding: 12px;
+
+//Brand Colors
+$backgroundColor: #344d5c;
+$primaryColor: #efc94d;
+$secondaryColor: #e27a3e;
+$skillMeterColor: #df5a49;
+$whiteColor: #fff;
+$blackColor: #000;
+
+// Fonts
+@include font-face("Bebas", fonts/Bebas);
+$primaryFont: "Bebas";
+$secondaryFont: "Arvo";

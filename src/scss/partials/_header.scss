@@ -1,0 +1,63 @@
+// Header Stylesheet
+
+@mixin header() {
+
+  padding-top: $innerContainerPadding;
+
+  .brand-image, .header-container {
+    display: inline-block;
+  }
+
+  .brand-image{
+    width: 25%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .header-container, .brand-image {
+    float: left;
+  }
+
+  .header-container {
+    padding: 1% 2%;
+    width: 75%;
+    h1, h3 {
+      @extend .text-left;
+    }
+  }
+
+}
+
+.header {
+
+  width: $outerContainer;
+  padding: $innerContainerPadding;
+
+  // Profile Image
+  img.squared {
+    border: 4px solid #fff;
+    border-radius: 5px;
+  }
+
+  .brand-image img {
+    width: $outerContainer;
+  }
+
+  @include bp(m) {
+    @include header();
+  }
+
+  @include bp(l) {
+    @include header();
+  }
+
+  @include bp(xl) {
+    @include header();
+    width: $innerContainer;
+    .brand-image {
+      width: 20%;
+    }
+  }
+
+}
