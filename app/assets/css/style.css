@@ -1,4 +1,8 @@
 /**
+ * About Me - Portfolio Stylesheet
+ * @author - Amruthaluri Kiran Kumar
+ */
+/**
  * Breakpoints for JavaScript. Works with the Deloitte Digital SCSS @bp mixin
  *
  * @version 1.0.0
@@ -8,7 +12,7 @@
  */
 @font-face {
   font-family: "Bebas";
-  src: url("fonts/Bebas.eot?") format("eot"), url("fonts/Bebas.woff2") format("woff2"), url("fonts/Bebas.woff") format("woff"), url("fonts/Bebas.ttf") format("truetype"), url("fonts/Bebas.svg#Bebas") format("svg"); }
+  src: url("fonts/BEBAS___-webfont.eot?") format("eot"), url("fonts/BEBAS___-webfont.woff2") format("woff2"), url("fonts/BEBAS___-webfont.woff") format("woff"), url("fonts/BEBAS___-webfont.ttf") format("truetype"), url("fonts/BEBAS___-webfont.svg#Bebas") format("svg"); }
 
 .clear:before, .clear:after {
   content: ' ';
